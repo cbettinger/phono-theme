@@ -104,7 +104,7 @@
 		$HOME/.icons
 	</IconPath>
 	<IconPath>
-		/usr/local/share/jwm/phono-theme
+		$HOME/.icons/phono-theme
 	</IconPath>
 	<IconPath>
 		/usr/local/share/icons
