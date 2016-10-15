@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<JWM>
+	<!--
+	TITLE:		Phono
+	AUTHOR:		Christian Bettinger
+	Created:	15.10.2016
+	Version:	1.0
+	JWM ver:	JWM 2.3
+	-->
+	<Desktops width="3" height="1">
+		<Background type="solid">#5B4A3A</Background>
+	</Desktops>
+
+	<RootMenu onroot="2">
+		<Include>$HOME/.jwmmenu</Include>
+		<Separator/>
+		<Exit confirm="true" label="Exit&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;" />
+	</RootMenu>
+
+	<Tray x="0" y="-1" height="36" autohide="off">
+		<TrayButton icon="start.png" label="&#x00A0;&#x00A0;&#x00A0; Start &#x00A0;&#x00A0;&#x00A0;">root:2</TrayButton>
+		<Spacer width="2" />
+
+		<Pager labeled="false" />
+		<Spacer width="2" />
+
+		<TaskList maxwidth="192" />
+		<Spacer width="2" />
+
+		<Clock format="%d. %b.      %H:%M"></Clock>
+		<Spacer width="8" />
+	</Tray>
+
+	<WindowStyle>
+		<Font>LiberationSans-9:bold</Font>
+		<Width>2</Width>
+		<Height>24</Height>
+		<Corner>3</Corner>
+		<Outline>#1B1A18</Outline>
+		<Background>#1B1A18</Background>
+		<Foreground>#D3D8D2</Foreground>
+		<Opacity>0.618</Opacity>
+		<Active>
+			<Outline>#1B1A18</Outline>
+			<Background>#1B1A18</Background>
+			<Foreground>#F2B826</Foreground>
+			<Opacity>1.0</Opacity>
+		</Active>
+	</WindowStyle>
+
+	<MenuStyle>
+		<Font>LiberationSans-9:bold</Font>
+		<Outline>#1B1A18</Outline>
+		<Background>#1B1A18</Background>
+		<Foreground>#D3D8D2</Foreground>
+		<Active>
+			<Background>#1B1A18</Background>
+			<Foreground>#F2B826</Foreground>
+		</Active>
+		<Opacity>1.0</Opacity>
+	</MenuStyle>
+
+	<PagerStyle>
+		<Font>LiberationSans-9</Font>
+		<Outline>#1B1A18</Outline>
+		<!-- Inactive Desktop Background -->
+		<Background>#2A2A2A</Background>
+		<!-- Unfocused Window -->
+		<Foreground>#D3D8D2</Foreground>
+		<Text>#1b1a18</Text>
+		<Active>
+			<!-- Active Desktop Background -->
+			<Background>#5B4A3A</Background>
+			<!-- Focused Window -->
+			<Foreground>#F2B826</Foreground>
+		</Active>
+	</PagerStyle>
+
+	<TrayStyle group="false" list="all">
+		<Font>LiberationSans-9:bold</Font>
+		<Outline>#1B1A18</Outline>
+		<Background>#1B1A18</Background>
+		<Foreground>#D3D8D2</Foreground>
+		<Active>
+			<Background>#1B1A18</Background>
+			<Foreground>#F2B826</Foreground>
+		</Active>
+		<Opacity>1.0</Opacity>
+	</TrayStyle>
+
+	<PopupStyle enabled="false">
+		<Font>LiberationSans-9</Font>
+		<Outline>#1B1A18</Outline>
+		<Background>#1B1A18</Background>
+		<Foreground>#D3D8D2</Foreground>
+	</PopupStyle>
+
+	<Group>
+		<Option>tiled</Option>
+		<Option>aerosnap</Option>
+	</Group>
+	
+	<IconPath>
+		$HOME/.icons
+	</IconPath>
+	<IconPath>
+		/usr/local/share/jwm/phono-theme
+	</IconPath>
+	<IconPath>
+		/usr/local/share/icons
+	</IconPath>
+	<IconPath>
+		/usr/local/share/pixmaps
+	</IconPath>
+	<IconPath>
+		/usr/local/lib/X11/icons
+	</IconPath>
+	<IconPath>
+		/usr/local/share/jwm
+	</IconPath>
+
+	<ButtonMin>minimize.png</ButtonMin>
+	<ButtonMax>maximize.png</ButtonMax>
+	<ButtonMaxActive>maximize.png</ButtonMaxActive>
+	<ButtonClose>close.png</ButtonClose>
+
+	<FocusModel>click</FocusModel>
+	<SnapMode distance="10">border</SnapMode>
+	<MoveMode coordinates="off">opaque</MoveMode>
+	<ResizeMode>opaque</ResizeMode>
+
+	<!-- recache menu on every (re-)start -->
+	<StartCommand>xdgmenumaker -n -i -f jwm > ~/.jwmmenu</StartCommand>
+	<RestartCommand>xdgmenumaker -n -i -f jwm > ~/.jwmmenu</RestartCommand>
+
+	<Key key="Up">up</Key>
+	<Key key="Down">down</Key>
+	<Key key="Right">right</Key>
+	<Key key="Left">left</Key>
+	<Key key="Return">select</Key>
+	<Key key="Escape">escape</Key>
+
+	<Key mask="C" key="Left">ldesktop</Key>
+	<Key mask="C" key="Right">rdesktop</Key>
+	<Key mask="C" key="Up">udesktop</Key>
+	<Key mask="C" key="Down">ddesktop</Key>
+
+	<Key mask="A" key="Left">maxleft</Key>
+	<Key mask="A" key="Right">maxright</Key>
+	<Key mask="A" key="Up">maximize</Key>
+	<Key mask="A" key="Down">shade</Key>
+
+	<Key mask="A" key="Q">close</Key>
+
+	<Key mask="A" key="R">restart</Key>
+	<Key mask="A" key="X">exit</Key>
+</JWM>
