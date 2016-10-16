@@ -1,5 +1,5 @@
 # phono-theme
-A Braun inspired JWM theme.
+JWM theme inspired by the color scheme of the Braun Regie 308 Control Unit.
 
 ![Screenshot](https://github.com/cbettinger/phono-theme/blob/master/screenshot.png)
 
