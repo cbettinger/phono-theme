@@ -129,10 +129,6 @@
 	<MoveMode coordinates="off">opaque</MoveMode>
 	<ResizeMode>opaque</ResizeMode>
 
-	<!-- recache menu on every (re-)start -->
-	<StartupCommand>xdgmenumaker -n -i -f jwm > ~/.jwmmenu</StartupCommand>
-	<RestartCommand>xdgmenumaker -n -i -f jwm > ~/.jwmmenu</RestartCommand>
-
 	<Key key="Up">up</Key>
 	<Key key="Down">down</Key>
 	<Key key="Right">right</Key>

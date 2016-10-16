@@ -17,3 +17,10 @@ cp ./phono-theme-master/.jwmrc ~/.jwmrc
 rm -rf ./phono-theme-master
 rm -f master.zip
 ```
+
+To update your menu every time you start X call 'xdgmenumaker' in your '.xinitrc', e.g.:
+
+```shell
+xdgmenumaker -n -i -f jwm > ~/.jwmmenu
+exec jwm
+```
