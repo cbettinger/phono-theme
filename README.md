@@ -31,6 +31,8 @@ cp ./phono-theme-master/icons/*.png ~/.icons/phono-theme
 cp ./phono-theme-master/.jwmrc ~/.jwmrc
 rm -rf ./phono-theme-master
 rm -f master.zip
+
+xdgmenumaker -n -i -f jwm > ~/.jwmmenu
 ```
 
 To update your menu every time you start X call `xdgmenumaker` in your `.xinitrc`, e.g.:
