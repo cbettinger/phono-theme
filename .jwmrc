@@ -3,8 +3,8 @@
 	<!--
 	TITLE:		Phono
 	AUTHOR:		Christian Bettinger
-	Created:	15.10.2016
-	Version:	1.0
+	Created:	18.11.2016
+	Version:	1.1
 	JWM ver:	JWM 2.3
 	-->
 	<Desktops width="3" height="1">
@@ -25,10 +25,16 @@
 		<Spacer width="2" />
 
 		<TaskList maxwidth="192" />
-		<Spacer width="2" />
+		<Spacer width="48" />
+	</Tray>
 
-		<Clock format="%d. %b.      %H:%M"></Clock>
-		<Spacer width="8" />
+	<Tray halign="right" y="-18" height="18" autohide="off">
+		<Clock format="%H:%M"></Clock>
+		<Spacer width="18" />
+	</Tray>
+
+	<Tray halign="right" y="-2" height="18" autohide="off">
+		<Clock format="%d. %b. %Y"></Clock>
 	</Tray>
 
 	<WindowStyle>
@@ -87,6 +93,10 @@
 		</Active>
 		<Opacity>1.0</Opacity>
 	</TrayStyle>
+
+	<ClockStyle>
+		<Font>LiberationSans-8</Font>
+	</ClockStyle>
 
 	<PopupStyle enabled="false">
 		<Font>LiberationSans-9</Font>
