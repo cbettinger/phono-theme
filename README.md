@@ -26,9 +26,9 @@ rm -f master.zip
 ```shell
 wget https://github.com/cbettinger/phono-theme/archive/master.zip
 unzip master.zip
-mkdir -p ~/.icons/phono-theme
-cp ./phono-theme-master/icons/*.png ~/.icons/phono-theme
-cp ./phono-theme-master/.jwmrc ~/.jwmrc
+cd phono-theme-master
+make install
+cd ..
 rm -rf ./phono-theme-master
 rm -f master.zip
 
