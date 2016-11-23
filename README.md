@@ -1,5 +1,7 @@
 # phono-theme
-JWM theme inspired by the color scheme of the Braun Regie 308 Control Unit.
+JWM theme inspired by the color scheme of the Braun Regie Hi-Fi products.
+
+Read more about JWM (Joe's Window Manager) at http://joewing.net/projects/jwm.
 
 ![Screenshot](https://github.com/cbettinger/phono-theme/blob/master/screenshot.png)
 
