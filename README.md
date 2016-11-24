@@ -27,6 +27,8 @@ rm -f master.zip
 ```
 
 ## Installation
+On FreeBSD:
+
 ```shell
 fetch https://github.com/cbettinger/phono-theme/archive/master.zip
 unzip master.zip
@@ -38,6 +40,8 @@ rm -f master.zip
 
 mjwm --iconize -o ~/.jwmmenu
 ```
+
+On Linux use `wget` or `curl` instead of fetch. 
 
 To update your menu every time you start X call `mjwm` in your `.xinitrc`, e.g.:
 
