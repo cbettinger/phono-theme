@@ -6,27 +6,29 @@ Read more about JWM (Joe's Window Manager) at http://joewing.net/projects/jwm.
 ![Screenshot](https://github.com/cbettinger/phono-theme/blob/master/screenshot.png)
 
 ## Prerequisites
-* Liberation Sans (Font)
-* [xdgmenumaker](https://github.com/gapan/xdgmenumaker)
+* Liberation Sans Font
+* [mjwm](https://github.com/chiku/mjwm)
 
 On FreeBSD:
 
 ```shell
-pkg install liberation-fonts-ttf txt2tags py27-xdg py27-gtk2
+pkg install liberation-fonts-ttf gcc automake
 
-wget https://github.com/gapan/xdgmenumaker/archive/master.zip
+fetch https://github.com/chiku/mjwm/archive/master.zip
 unzip master.zip
-cd xdgmenumaker-master
+cd mjwm-master
+./autogen.sh
+./configure --prefix=/usr
 make
 make install
 cd ..
-rm -rf ./xdgmenumaker-master
+rm -rf ./mjwm-master
 rm -f master.zip
 ```
 
 ## Installation
 ```shell
-wget https://github.com/cbettinger/phono-theme/archive/master.zip
+fetch https://github.com/cbettinger/phono-theme/archive/master.zip
 unzip master.zip
 cd phono-theme-master
 make install
@@ -34,13 +36,13 @@ cd ..
 rm -rf ./phono-theme-master
 rm -f master.zip
 
-xdgmenumaker -n -i -f jwm > ~/.jwmmenu
+mjwm --iconize -o ~/.jwmmenu
 ```
 
-To update your menu every time you start X call `xdgmenumaker` in your `.xinitrc`, e.g.:
+To update your menu every time you start X call `mjwm` in your `.xinitrc`, e.g.:
 
 ```shell
-xdgmenumaker -n -i -f jwm > ~/.jwmmenu
+mjwm --iconize -o ~/.jwmmenu
 exec jwm
 ```
 
@@ -104,6 +106,6 @@ To load this file every time you start X call `xrdb` in your `.xinitrc`, e.g.:
 
 ```shell
 xrdb ~/.Xresourdes
-xdgmenumaker -n -i -f jwm > ~/.jwmmenu
+mjwm --iconize -o ~/.jwmmenu
 exec jwm
 ```
