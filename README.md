@@ -41,7 +41,7 @@ rm -f master.zip
 mjwm --iconize -o ~/.jwmmenu
 ```
 
-On Linux use `wget` or `curl` instead of fetch. 
+On Linux use `wget` or `curl` instead of `fetch`. 
 
 To update your menu every time you start X call `mjwm` in your `.xinitrc`, e.g.:
 
