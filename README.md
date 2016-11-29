@@ -107,7 +107,7 @@ xcalc.ti.button40.background: #F2B826
 To load this file every time you start X call `xrdb` in your `.xinitrc`, e.g.:
 
 ```shell
-xrdb ~/.Xresourdes
+xrdb ~/.Xresources
 xdgmenumaker -n -i -f jwm > ~/.jwmmenu
 exec jwm
 ```
