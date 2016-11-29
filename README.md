@@ -48,7 +48,24 @@ xdgmenumaker -n -i -f jwm > ~/.jwmmenu
 exec jwm
 ```
 
-## .Xresources
+## Options
+
+### xcompmgr
+The menu and the windows can be rendered with transparency by using the `xcompmgr` composite manager. On FreeBSD install it with
+
+```shell
+pkg install xcompmgr
+```
+
+and run `xcompmgr` in the background every time you start X by adding a call to your `.xinitrc`, e.g.:
+
+```shell
+xcompmgr -f -F &
+xdgmenumaker -n -i -f jwm > ~/.jwmmenu
+exec jwm
+```
+
+### .Xresources
 The customization of the terminal and the calculator as seen in the screenshot can be adopted by adding the following lines to your `.Xresources`:
 
 ```
