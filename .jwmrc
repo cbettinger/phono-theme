@@ -2,9 +2,9 @@
 <JWM>
 	<!--
 	TITLE:		Phono
-	AUTHOR:		Christian Bettinger
-	Created:	18.11.2016
-	Version:	1.1
+	AUTHOR:		Christian Bettinger <https://github.com/cbettinger>
+	Created:	15.10.2016
+	Version:	1.2
 	JWM ver:	JWM 2.3
 	-->
 	<Desktops width="3" height="1">
@@ -15,6 +15,8 @@
 		<Include>$HOME/.jwmmenu</Include>
 		<Separator/>
 		<Exit confirm="true" label="Exit&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;" />
+		<Program label="Restart">shutdown -r now</Program>
+		<Program label="Shutdown">shutdown -p now</Program>
 	</RootMenu>
 
 	<Tray x="0" y="-1" height="36" autohide="off">
