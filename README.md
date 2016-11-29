@@ -144,3 +144,9 @@ xrdb ~/.Xresources
 xdgmenumaker -n -i -f jwm > ~/.jwmmenu
 exec jwm
 ```
+
+Make sure the monospace font `Inconsolata` is installed. On FreeBSD:
+
+```shell
+pkg install inconsolata-ttf
+```
