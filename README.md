@@ -66,6 +66,14 @@ Otherwise you can comment out the corresponding `Program` items in `.jwmrc`:
 
 ## Options
 
+### Start menu icon
+On Linux you might want to change the BSD specific start menu icon to the provided `start-linux.png` or any other PNG file.
+
+```xml
+<TrayButton icon="start-linux.png" label="&#x00A0;&#x00A0;&#x00A0; Start &#x00A0;&#x00A0;&#x00A0;">root:2</TrayButton>
+<!--<TrayButton icon="start-bsd.png" label="&#x00A0;&#x00A0;&#x00A0; Start &#x00A0;&#x00A0;&#x00A0;">root:2</TrayButton>-->
+```
+
 ### xcompmgr
 The menu and the windows can be rendered with transparency by using the `xcompmgr` composite manager. On FreeBSD install it with
 
