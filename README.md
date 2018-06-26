@@ -69,7 +69,7 @@ exec jwm
 In order to allow a user to restart or shutdown the machine make sure the user is allowed to call `shutdown`. On FreeBSD you have to add the user to the group `operator`:
 
 ```shell
-pw groupmod operator -m USER_NAME
+pw groupmod operator -m YOUR_USER_NAME
 ```
 
 Otherwise you can comment out the corresponding `Program` items in `.jwmrc`:
