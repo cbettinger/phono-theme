@@ -4,7 +4,7 @@
 	TITLE:		Phono
 	AUTHOR:		Christian Bettinger <https://github.com/cbettinger>
 	Created:	15.10.2016
-	Version:	1.2
+	Version:	1.3
 	JWM ver:	JWM 2.3
 	-->
 	<Desktops width="3" height="1">
@@ -14,13 +14,14 @@
 	<RootMenu onroot="2">
 		<Include>$HOME/.jwmmenu</Include>
 		<Separator/>
-		<Exit confirm="true" label="Exit&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;" />
+		<Exit confirm="true" label="Exit" />
 		<Program label="Restart">shutdown -r now</Program>
 		<Program label="Shutdown">shutdown -p now</Program>
 	</RootMenu>
 
 	<Tray x="0" y="-1" height="36" autohide="off">
-		<TrayButton icon="start-bsd.png" label="&#x00A0;&#x00A0;&#x00A0; Start &#x00A0;&#x00A0;&#x00A0;">root:2</TrayButton>
+		<TrayButton icon="start-ubuntu.png" label="Start">root:2</TrayButton>
+		<!--<TrayButton icon="start-ubuntu.png" label="Start">root:2</TrayButton>-->
 		<Spacer width="2" />
 
 		<Pager labeled="false" />
@@ -111,7 +112,7 @@
 		<Option>tiled</Option>
 		<Option>aerosnap</Option>
 	</Group>
-	
+
 	<IconPath>
 		$HOME/.icons
 	</IconPath>

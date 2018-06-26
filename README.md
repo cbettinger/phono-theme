@@ -6,15 +6,27 @@ Read more about JWM (Joe's Window Manager) at http://joewing.net/projects/jwm.
 ![Screenshot](https://github.com/cbettinger/phono-theme/blob/master/screenshot.png)
 
 ## Prerequisites
+* Xorg
+* JWM
 * Liberation Sans Font
 * [xdgmenumaker](https://github.com/gapan/xdgmenumaker)
 
-On FreeBSD:
-
+Ubuntu:
 ```shell
-pkg install liberation-fonts-ttf txt2tags py27-xdg py27-gtk2
+apt install xorg jwm fonts-liberation txt2tags python-xdg python-gtk2
+
+wget https://github.com/gapan/xdgmenumaker/archive/master.zip
+```
+
+FreeBSD:
+```shell
+pkg install xorg jwm liberation-fonts-ttf txt2tags py27-xdg py27-gtk2
 
 fetch https://github.com/gapan/xdgmenumaker/archive/master.zip
+```
+
+Both:
+```shell
 unzip master.zip
 cd xdgmenumaker-master
 make
@@ -25,10 +37,18 @@ rm -f master.zip
 ```
 
 ## Installation
-On FreeBSD:
+Ubuntu:
+```shell
+wget https://github.com/cbettinger/phono-theme/archive/master.zip
+````
 
+FreeBSD:
 ```shell
 fetch https://github.com/cbettinger/phono-theme/archive/master.zip
+```
+
+Both:
+```shell
 unzip master.zip
 cd phono-theme-master
 make install
@@ -38,8 +58,6 @@ rm -f master.zip
 
 xdgmenumaker -n -i -f jwm > ~/.jwmmenu
 ```
-
-On Linux use `wget` or `curl` instead of `fetch`. 
 
 To update your menu every time you start X call `xdgmenumaker` in your `.xinitrc`, e.g.:
 
@@ -67,16 +85,22 @@ Otherwise you can comment out the corresponding `Program` items in `.jwmrc`:
 ## Options
 
 ### Start menu icon
-On Linux you might want to change the BSD specific start menu icon to the provided `start-linux.png` or any other PNG file.
+On FreeBSD you might want to change the Ubuntu specific start menu icon to the provided `start-bsd.png` or any other PNG file.
 
 ```xml
-<TrayButton icon="start-linux.png" label="&#x00A0;&#x00A0;&#x00A0; Start &#x00A0;&#x00A0;&#x00A0;">root:2</TrayButton>
-<!--<TrayButton icon="start-bsd.png" label="&#x00A0;&#x00A0;&#x00A0; Start &#x00A0;&#x00A0;&#x00A0;">root:2</TrayButton>-->
+<!--<TrayButton icon="start-ubuntu.png" label="Start">root:2</TrayButton>-->
+<TrayButton icon="start-bsd.png" label="Start">root:2</TrayButton>
 ```
 
 ### xcompmgr
-The menu and the windows can be rendered with transparency by using the `xcompmgr` composite manager. On FreeBSD install it with
+The menu and the windows can be rendered with transparency by using the `xcompmgr` composite manager. Install it with
 
+Ubuntu:
+```shell
+apt install xcompmgr
+```
+
+FreeBSD:
 ```shell
 pkg install xcompmgr
 ```
@@ -153,8 +177,14 @@ xdgmenumaker -n -i -f jwm > ~/.jwmmenu
 exec jwm
 ```
 
-Make sure the monospace font `Inconsolata` is installed. On FreeBSD:
+Make sure the monospace font `Inconsolata` is installed:
 
+Ubuntu:
+```shell
+apt install fonts-inconsolata
+```
+
+FreeBSD:
 ```shell
 pkg install inconsolata-ttf
 ```
