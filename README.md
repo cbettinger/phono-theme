@@ -11,75 +11,39 @@ Read more about JWM (Joe's Window Manager) at http://joewing.net/projects/jwm.
 * Liberation Sans Font
 * [xdgmenumaker](https://github.com/gapan/xdgmenumaker)
 
-Ubuntu:
+On Ubuntu:
 ```shell
-apt install xorg jwm fonts-liberation txt2tags python-xdg python-gtk2
+sudo apt install xorg jwm fonts-liberation txt2tags python-xdg python-gtk2
 
 wget https://github.com/gapan/xdgmenumaker/archive/master.zip
-```
 
-FreeBSD:
-```shell
-pkg install xorg jwm liberation-fonts-ttf txt2tags py27-xdg py27-gtk2
-
-fetch https://github.com/gapan/xdgmenumaker/archive/master.zip
-```
-
-Both:
-```shell
 unzip master.zip
 cd xdgmenumaker-master
 make
-make install
+sudo make install
 cd ..
 rm -rf ./xdgmenumaker-master
 rm -f master.zip
 ```
 
 ## Installation
-Ubuntu:
+On Ubuntu:
 ```shell
 wget https://github.com/cbettinger/phono-theme/archive/master.zip
-````
 
-FreeBSD:
-```shell
-fetch https://github.com/cbettinger/phono-theme/archive/master.zip
-```
-
-Both:
-```shell
 unzip master.zip
 cd phono-theme-master
 make install
 cd ..
 rm -rf ./phono-theme-master
 rm -f master.zip
-
-xdgmenumaker -n -i -f jwm > ~/.jwmmenu
-```
+````
 
 To update your menu every time you start X call `xdgmenumaker` in your `.xinitrc`, e.g.:
 
 ```shell
 xdgmenumaker -n -i -f jwm > ~/.jwmmenu
 exec jwm
-```
-
-In order to allow a user to restart or shutdown the machine make sure the user is allowed to call `shutdown`. On FreeBSD you have to add the user to the group `operator`:
-
-```shell
-pw groupmod operator -m YOUR_USER_NAME
-```
-
-Otherwise you can comment out the corresponding `Program` items in `.jwmrc`:
-
-```xml
-<RootMenu onroot="2">
-	...
-	<!--<Program label="Restart">shutdown -r now</Program>-->
-	<!--<Program label="Shutdown">shutdown -p now</Program>-->
-</RootMenu>
 ```
 
 ## Options
@@ -95,14 +59,9 @@ On FreeBSD you might want to change the Ubuntu specific start menu icon to the p
 ### xcompmgr
 The menu and the windows can be rendered with transparency by using the `xcompmgr` composite manager. Install it with
 
-Ubuntu:
+On Ubuntu:
 ```shell
-apt install xcompmgr
-```
-
-FreeBSD:
-```shell
-pkg install xcompmgr
+sudo apt install xcompmgr
 ```
 
 and run `xcompmgr` in the background every time you start X by adding a call to your `.xinitrc`, e.g.:
@@ -179,12 +138,7 @@ exec jwm
 
 Make sure the monospace font `Inconsolata` is installed:
 
-Ubuntu:
+On Ubuntu:
 ```shell
-apt install fonts-inconsolata
-```
-
-FreeBSD:
-```shell
-pkg install inconsolata-ttf
+sudo apt install fonts-inconsolata
 ```
