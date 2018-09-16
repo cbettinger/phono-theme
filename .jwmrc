@@ -19,7 +19,7 @@
 
 	<Tray x="0" y="-1" height="36" autohide="off">
 		<TrayButton icon="start-ubuntu.png" label="Start">root:2</TrayButton>
-		<!--<TrayButton icon="start-ubuntu.png" label="Start">root:2</TrayButton>-->
+		<!--<TrayButton icon="start-bsd.png" label="Start">root:2</TrayButton>-->
 		<Spacer width="2" />
 
 		<Pager labeled="false" />
