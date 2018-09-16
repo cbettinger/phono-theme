@@ -17,6 +17,18 @@
 		<Program label="Shutdown">shutdown -p now</Program>
 	</RootMenu>
 
+	<MenuStyle>
+		<Font>LiberationSans-9:bold</Font>
+		<Outline>#1B1A18</Outline>
+		<Background>#1B1A18</Background>
+		<Foreground>#D3D8D2</Foreground>
+		<Active>
+			<Background>#1B1A18</Background>
+			<Foreground>#F2B826</Foreground>
+		</Active>
+		<Opacity>1.0</Opacity>
+	</MenuStyle>
+
 	<Tray x="0" y="-1" height="36" autohide="off">
 		<TrayButton icon="start-ubuntu.png" label="Start">root:2</TrayButton>
 		<!--<TrayButton icon="start-bsd.png" label="Start">root:2</TrayButton>-->
@@ -38,24 +50,7 @@
 		<Clock format="%d. %b. %Y"></Clock>
 	</Tray>
 
-	<WindowStyle>
-		<Font>LiberationSans-9:bold</Font>
-		<Width>2</Width>
-		<Height>24</Height>
-		<Corner>3</Corner>
-		<Outline>#1B1A18</Outline>
-		<Background>#1B1A18</Background>
-		<Foreground>#D3D8D2</Foreground>
-		<Opacity>0.618</Opacity>
-		<Active>
-			<Outline>#1B1A18</Outline>
-			<Background>#1B1A18</Background>
-			<Foreground>#F2B826</Foreground>
-			<Opacity>1.0</Opacity>
-		</Active>
-	</WindowStyle>
-
-	<MenuStyle>
+	<TrayStyle group="false" list="all">
 		<Font>LiberationSans-9:bold</Font>
 		<Outline>#1B1A18</Outline>
 		<Background>#1B1A18</Background>
@@ -65,7 +60,7 @@
 			<Foreground>#F2B826</Foreground>
 		</Active>
 		<Opacity>1.0</Opacity>
-	</MenuStyle>
+	</TrayStyle>
 
 	<PagerStyle>
 		<Font>LiberationSans-9</Font>
@@ -83,21 +78,26 @@
 		</Active>
 	</PagerStyle>
 
-	<TrayStyle group="false" list="all">
-		<Font>LiberationSans-9:bold</Font>
-		<Outline>#1B1A18</Outline>
-		<Background>#1B1A18</Background>
-		<Foreground>#D3D8D2</Foreground>
-		<Active>
-			<Background>#1B1A18</Background>
-			<Foreground>#F2B826</Foreground>
-		</Active>
-		<Opacity>1.0</Opacity>
-	</TrayStyle>
-
 	<ClockStyle>
 		<Font>LiberationSans-8</Font>
 	</ClockStyle>
+
+	<WindowStyle>
+		<Font>LiberationSans-9:bold</Font>
+		<Width>2</Width>
+		<Height>24</Height>
+		<Corner>3</Corner>
+		<Outline>#1B1A18</Outline>
+		<Background>#1B1A18</Background>
+		<Foreground>#D3D8D2</Foreground>
+		<Opacity>0.618</Opacity>
+		<Active>
+			<Outline>#1B1A18</Outline>
+			<Background>#1B1A18</Background>
+			<Foreground>#F2B826</Foreground>
+			<Opacity>1.0</Opacity>
+		</Active>
+	</WindowStyle>
 
 	<PopupStyle enabled="false">
 		<Font>LiberationSans-9</Font>
